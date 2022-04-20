@@ -2,7 +2,6 @@ apiVersion: "apps/v1"
 kind: "Deployment"
 metadata:
   name: "apache-1"
-  namespace: "default"
   labels:
     app: "apache-1"
 spec:

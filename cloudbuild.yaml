@@ -14,5 +14,5 @@ steps:
       "--delivery-pipeline", "pipeline",
       "--region", "us-central1",
       "--images", "cloud-deploy=gcr.io/igneous-mason-347617/apache:latest",
-      "--skaffold-file=skaffold.yml"
+      "--skaffold-file=skaffold.yaml"
     ]  

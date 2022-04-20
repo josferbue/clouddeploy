@@ -1,0 +1,20 @@
+apiVersion: skaffold/v2beta16
+kind: Config
+deploy:
+  kubectl:
+    defaultNamespace: dev
+    manifests:
+    - kubeconf/k8s-*
+profiles:
+- name: dev
+  deploy:
+    kubectl:
+      defaultNamespace: dev
+      manifests:
+      - kubeconf/k8s-*
+- name: staging
+  deploy:
+    kubectl:
+      defaultNamespace: staging
+      manifests:
+      - kubeconf/k8s-*      

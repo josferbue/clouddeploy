@@ -16,7 +16,7 @@ apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
   name: dev
-description: dev cluster for deploys
+description: dev cluster for deploy
 gke:
   cluster: projects/igneous-mason-347617/locations/us-central1/clusters/cluster-devops
 ---  
@@ -24,6 +24,6 @@ apiVersion: deploy.cloud.google.com/v1
 kind: Target
 metadata:
   name: staging
-description: staging cluster for deploys
+description: staging cluster for deploy
 gke:
   cluster: projects/igneous-mason-347617/locations/us-central1/clusters/cluster-devops  
